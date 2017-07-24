@@ -1,0 +1,68 @@
+body {
+  font-size: 15px;
+  font-family: Verdana,sans-serif;  
+  width: 1044px;
+  margin: 0 auto;
+  background-image: url("http://www.marionnaud.it/_ui/desktop/theme-igc/img/maincontainer_shadow.png");
+  background-repeat: repeat-y;
+  background-position: center center;
+}
+.App{
+  margin-left: 15px;
+}
+a {
+  font-size: 14px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+}
+
+a:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+  a {
+    width: calc(25% - 150px);
+  }
+  
+  a:nth-of-type(2n) {
+    margin-right: 8px;  
+  }
+  
+  a:nth-of-type(4n) {
+    margin-right: 8px;
+  }
+}
+
+a:hover img {
+  transform: scale(1.05);
+} 
+
+figure {
+  margin: 0;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 4px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
